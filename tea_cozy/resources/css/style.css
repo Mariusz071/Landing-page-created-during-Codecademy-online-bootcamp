@@ -1,0 +1,156 @@
+body {
+  font-family:Helvetica;
+  font-size:22px;
+  color:seashell;
+  background-color:black;
+  opacity:0.9;
+  text-align:center;
+  margin:0;
+}
+
+/*Header section*/
+.header{
+  background-color: black;
+  padding:0 10px;
+  margin:0;
+  display:flex;
+  position:fixed;
+  align-items: center;
+  min-height:69px;
+  border-bottom:1px solid seashell;
+  width:100%;
+  }
+
+.header img /*header logo*/{
+  max-height:50px;
+  display:inline-flex;
+  justify-content: flex-start;
+}
+
+/*Navbar styling*/
+.navbar{
+  min-width:87%;
+  display: inline-flex;
+  justify-content:flex-end;
+}
+
+.navbar ul{
+  list-style: none;
+}
+
+.navbar a{
+  color:seashell;
+  margin-left:10px;
+}
+
+.navbar li{
+  display:inline-block;
+}
+
+/*Mission section*/
+.mission{
+  display:flex;
+  min-width:1200px;
+  min-height:700px;
+  background-image: url('../images/mission_background.jpg');
+  background-size: cover;
+  margin:0 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Mission section - header*/
+.mission_header{
+  min-height:90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  width:100%;
+  align-content: center;
+  padding:5px 0;
+  margin-top:50px;
+}
+
+.mission_header h2,h4, .bests p{
+  margin:0;
+}
+
+.bests /*Container for the top product section*/{
+  justify-content: center;
+  min-width:1000px;
+  padding-top:50px;
+}
+
+.top /*Top product section (img + description)*/{
+  flex-wrap:wrap;
+  display:flex;
+  margin:0 100px;
+  justify-content: center;
+  padding-bottom:80px;
+}
+
+.bests img /*Product image styling*/{
+  height:200px;
+  width:300px;
+  display:inline-block;
+  margin:30px 15px 10px 15px;
+}
+
+.locations /*Whole section with background and adresses*/{
+  margin:auto;
+  width:1200px;
+  min-height:500px;
+  background-image: url('../images/location_background.jpg');
+  background-size: cover;
+  background-position:0% 25%;
+  margin-bottom:10px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.address /*Address squares styling*/{
+  margin-top:15px;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.address h3,
+.footer h2,
+.footer h5,
+.locations h2 /*Helps to position some of the elements*/{
+  margin:0;
+  padding:0;
+}
+
+.downtown,
+.oakdale,
+.bayside /*Locations divs, keeping it in separate classes
+  makes it more readable for me*/{
+  background-color:black;
+  min-width:300px;
+  opacity:1;
+  margin:0px 20px 0px 20px;
+  height:300px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer /*Footer section*/{
+  height:150px;
+  padding-bottom:50px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#copyright /*Bottom copyright paragraph*/{
+  text-align:left;
+  margin:0 0 20px 20px;
+  font-weight:bold;
+}
